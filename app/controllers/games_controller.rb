@@ -11,9 +11,18 @@ class GamesController < ApplicationController
   end
 
   def create
+    @game = Game.create(state: params[:state])
+    render json: @game, status: 201
   end
 
   def update
   end
+
+  private
+
+  def game_params
+    params.require 
+  end
+  
 
 end
