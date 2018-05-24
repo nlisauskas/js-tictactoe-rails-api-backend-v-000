@@ -21,11 +21,4 @@ class GamesController < ApplicationController
     render json: @game
   end
 
-  private
-
-  def game_params
-    params.require 
-  end
-  
-
 end
